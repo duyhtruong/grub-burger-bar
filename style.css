@@ -78,7 +78,7 @@ ul{
 
 .headlink{
 	text-decoration: none;
-	
+
 }
 .headlink:visited{
 	color: #FDFDFD;
@@ -184,6 +184,7 @@ ul{
 	align-items: center;
 	padding-bottom: 1em;
 
+
 }
 
 .hourflex{
@@ -205,6 +206,10 @@ ul{
 	padding-bottom: 2em;
 }
 
+.footerflex1 p{
+	padding-left: 3.5em; 
+}
+
 .foodlist{
 	text-align: center;
 	font-size: 1.5em;
@@ -221,8 +226,13 @@ ul{
 	width: 7em;
 }
 
-.join{
+.join img{
 	width: 300px;
+}
+
+.join{
+	text-align:center;
+	
 
 }
 
@@ -246,5 +256,49 @@ ul{
     color: #133F70;
 }
 
+@media (min-width:1025px) {
+	.footerflex{
+		flex-direction: row;
+		justify-content:space-between;
+		align-items: flex-start;
+	}
+
+	.footerflex1{
+		flex-direction: column;
+		padding-left: 18vw;
+	}
+
+	.footerflex2{
+		flex-direction: column;
+		padding-right: 18vw;
+	}
+	
+
+	.bgtest4{
+		
+		padding-top: 10vw;
+	}
+
+	.foodlist{
+		display: flex;
+		padding-top: 5vh;
+
+	}
+
+	.foodlist div{
+		padding-right: 1vw;
+		padding-left: 1vw;
+
+	}
+
+	.bgtest3{
+		padding-top: 10vw;
+	}
+
+	.foodbadge{
+		width: 12em;
+	}
+
+}
 
 
