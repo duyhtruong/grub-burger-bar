@@ -10,17 +10,25 @@
 	background-image:URL('Plano.jpg');
 	height: 80vh;
 	background-attachment: fixed;
+	clip-path: polygon(0 calc(100% - 8vw), 
+					50% 100%, 
+					100% calc(100% - 8vw), 
+					100% 0, 
+					0 0);
 
 }
 
 .bgtest2{
 	background-color: #FDFDFD;
-	height: 30em;
-	padding: 10vw 10vw 1vw 10vw;
-	
+	height: 35em;
+	padding: 18vw 10vw 1vw 10vw;
+	margin-top:-8vw;
+
 	text-align: center;
 		
 }
+
+
 
 .aboutpara{
 	line-height: 1.5;
@@ -39,21 +47,28 @@
 	width: 12em;
 }
 
-.logo{
-	font-size: 2em;
+.signature{
+	width: 200px;
+	padding-top: 2em;
+
 }
+
+
 
 ul{
 	list-style:none;
 	padding-top:1.5em;
 }
 
-a{
+.headlink{
 	text-decoration: none;
 }
-a:visited{
+.headlink:visited{
 	color: #FDFDFD;
 }
+
+
+
 
 .nav-container{
 	display: flex;
@@ -92,27 +107,66 @@ a:visited{
 	
 	box-sizing: border-box;
 	padding-bottom: 20vh;
-	text-align: center;
+	
 
 
+}
+
+.aboutflex{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.aboutheader{
+	background-color: red;
+	border-radius: 2em;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	color: #FDFDFD;
+	font-size: 1em;
+}
+
+.menufont{
+	background-color: red;
+	border-radius: 2em;
+	color: #FDFDFD;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+
+.gift{
+	width: 320px;
+	padding-top: 1em;
+	padding-bottom: 3em;
 }
 
 .bgtest4{
 	margin-top: -6vw;
-	padding-top: 15vw;
+	padding-top: 20vw;
 	background-color: #133F70;
-	height: 25em;
+	height: 50em;
 	width: 100%;
-	padding-left: 1.5em;
-	padding-right: 1.5em;
+	
 	box-sizing: border-box;
 	color: #FDFDFD;
-	font-size: 0.8em;
+	font-size: 1em;
 }
 
 .footerflex{
 	display:flex;
-	justify-content: space-between;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 1em;
+
 }
 
 .hourflex{
@@ -120,38 +174,51 @@ a:visited{
 	justify-content: space-between;
 }
 
+.hourflex1{
+	padding-right: 3em;
+}
+
+.footerflex2{
+	padding-top: 1em;
+	padding-bottom:1em;
+}
+
+.footerflex1{
+	padding-top: 1em;
+	padding-bottom: 2em;
+}
+
 .foodlist{
 	text-align: center;
 	font-size: 1.5em;
 }
 
-.foodbadge{
-	width: 10em;
+.foodlist p{
+	font-size: 0.9em;
 }
 
+.foodbadge{
+	width: 7em;
+}
+
+.join{
+	width: 300px;
+
+}
 
 .footer {
 	
 	display: flex;
-	flex-direction: row;
-	
-	justify-content: flex-start;
-
-	left: 0;
-	bottom: 0;
 	
 	
-	margin-top: 4em;
-	padding-top: 2em;
-	padding-bottom: 6em;
-	padding-left: 7em;
+	justify-content: center;
 
 }
 
 .fa {
-    padding: 15px;
-    font-size: 30px;
-    width: 15px;
+    padding: 8px;
+    width: 50px;
+    height: 50px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
